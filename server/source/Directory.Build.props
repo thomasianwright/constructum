@@ -1,0 +1,7 @@
+<Project>
+    <PropertyGroup>
+        <RootNamespace>
+            Constructum.Server
+        </RootNamespace>
+    </PropertyGroup>
+</Project>

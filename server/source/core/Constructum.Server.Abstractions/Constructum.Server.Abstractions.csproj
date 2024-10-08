@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Update="Entities\Organisation.cs">
+        <DependentUpon>IOrganisation.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Organisations\Entities\Organisation.cs">
+        <DependentUpon>IOrganisation.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentResults" Version="3.16.0" />
+      <PackageReference Include="Mediator.Abstractions" Version="3.0.0-preview.27" />
+    </ItemGroup>
+
+</Project>
